@@ -1,5 +1,5 @@
 <template>
-  <listaTareas msg="Crear nueva tarea"/>
+  <listaTareas />
 </template>
 
 <script>

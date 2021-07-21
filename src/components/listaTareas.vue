@@ -2,7 +2,7 @@
   <div id="lista">
       <h2> Crea una nueva tarea</h2>
       <label for="tarea" ><b>Tarea</b></label>
-      <input :type="text" v-model="nuevasTareas" placeholder="Ingresa nueva tarea">
+      <input type="text" v-model="nuevasTareas" placeholder="Ingresa nueva tarea">
       <button @click="agregarTarea">Crear</button>
     <h4>Lista</h4>
     <ul >
@@ -13,7 +13,9 @@
 
 <script>
 export default {
-    data: () => ({
+  name: 'lista-tareas',
+  data: () => ({
+      msg: String,
       nuevasTareas: '',
       tareas: [],
   }),
