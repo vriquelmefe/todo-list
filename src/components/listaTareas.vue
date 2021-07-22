@@ -6,16 +6,15 @@
       <button @click="agregarTarea">Crear</button>
     <h4>Lista</h4>
     <ul >
-      <li v-for="(value, $index) in tareas" :key="$index">{{ $index }}: {{ value }}</li> 
+      <li v-for="(value, index) in tareas" :key="index">{{ index }}: {{ value }}</li> 
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'lista-tareas',
+  name: 'listaTareas',
   data: () => ({
-      msg: String,
       nuevasTareas: '',
       tareas: [],
   }),
