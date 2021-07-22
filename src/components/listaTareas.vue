@@ -6,7 +6,7 @@
       <button @click="agregarTarea">Crear</button>
     <h4>Lista</h4>
     <ul >
-      <li v-for="(value, index) in tareas" :key="index">{{ index }}: {{ value }}</li> 
+      <li v-for="(tarea, index) in tareas" :key="index">{{ index }}: {{ tarea }}</li> 
     </ul>
   </div>
 </template>
